@@ -1,0 +1,54 @@
+:root{
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/static/Inter-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/static/Inter-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/static/Inter-ExtraBold.ttf');
+    font-weight: 800;
+}
+
+
+@supports(font-variation-settings: normal){
+    @font-face {
+        font-family: 'Inter';
+        src: url('../assets/fonts/Inter-VariableFont_wght.ttf') format('truetype supports variations'),
+        url('../assets/fonts/Inter-VariableFont_wght.ttf') format('truetype-variations');
+        font-weight: 400 800;
+    }
+}
+
+body{
+    font-family: 'Inter';
+}
+
+.header__logo{}
+.nav__list{}
+.main__frontpage{}
+.frontpage__image{}
+.frontpage__title{}
+.frontpage__paragraph{}
+.frontpage__button{}
+.main__news_article{}
+.news_article__title{}
+.news_article__new{}
+.main__other_news{}
+.other_news__new{}
+.other_news__image{}
