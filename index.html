@@ -12,16 +12,18 @@
 </head>
 <body>
   <header>
-    <a href="#" class="header__logo">logo</a>
-    <nav>
+    <a href="#" class="header__logo"></a>
+    <nav id="navbar">
       <ul class="nav__list">
         <li><a href="#">Home</a></li>
         <li><a href="#">New</a></li>
         <li><a href="#">Popular</a></li>
         <li><a href="#">Trending</a></li>
         <li><a href="#">Categories</a></li>
+        <button class="nav__close_button" type="button" onclick="closeMenu()"></button>
       </ul>
     </nav>
+    <button class="nav__button" type="button" onclick="openMenu()"></button>
   </header>
   <main>
     <article class="main__frontpage">
@@ -40,12 +42,14 @@
           <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
         </a>
       </section>
+      <hr>
       <section class="news_article__new">
         <a href="#">
           <h2>The Downsides of AI artisty</h2>
           <p>What are the possible adverse effects of on-demand AI image generation?</p>
         </a>
       </section>
+      <hr>
       <section class="news_article__new">
         <a href="#">
           <h2>Is VC funding Frying Up?</h2>
@@ -59,9 +63,11 @@
           <div class="other_news__image">
             <img src="./assets/images/image-retro-pcs.jpg" alt="old computers and consoles">
           </div>
-          <span>01</span>
-          <h2>Reviving Retro PCs</h2>
-          <p>What happens when old PCs are given modern upgrades?</p>
+          <div class="other_news__content">
+            <span>01</span>
+            <h2>Reviving Retro PCs</h2>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
         </a>
       </section>
       <section class="other_news__new">
@@ -69,9 +75,11 @@
           <div class="other_news__image">
             <img src="./assets/images/image-top-laptops.jpg" alt="laptop keyboard">
           </div>
-          <span>02</span>
-          <h2>Top 10 Laptops of 2022</h2>
-          <p>Our best Picks for various needs and budgets.</p>
+          <div class="other_news__content">
+            <span>02</span>
+            <h2>Top 10 Laptops of 2022</h2>
+            <p>Our best Picks for various needs and budgets.</p>
+          </div>
         </a>
       </section>
       <section class="other_news__new">
@@ -79,12 +87,16 @@
           <div class="other_news__image">
             <img src="./assets/images/image-gaming-growth.jpg" alt="hand with a videogame controller">
           </div>
-          <span>03</span>
-          <h2>The growth of gaming</h2>
-          <p>How the pandemic has sparked fresh opportunities.</p>
+          <div class="other_news__content">
+            <span>03</span>
+            <h2>The growth of gaming</h2>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
         </a>
       </section>
     </article>
   </main>
+
+  <script src="./main.js"></script>
 </body>
 </html>
